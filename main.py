@@ -1,23 +1,3 @@
-"""from bs4 import BeautifulSoup
-import requests
-
-url = "https://www.walmart.com/ip/Asus-TUF-VG27VQ3-27-Class-Full-HD-Curved-Screen-Gaming-LCD-Monitor/5964276334?classType=REGULAR&from=/search"
-
-HEADERS = {
-    "Accept": "*/*",
-    "Accept-Encoding": "gzip, deflate, br, zstd",
-    "Accept-Language": "en-US,en;q=0.9",
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
-}
-
-response = requests.get(url, headers=HEADERS)
-soup = BeautifulSoup(response.text, "html.parser")
-script_tag = soup.find("script", id="__NEXT_DATA__")
-
-html = script_tag
-print(html)"""
-
-
 from bs4 import BeautifulSoup
 import requests
 import csv
